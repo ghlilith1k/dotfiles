@@ -5,7 +5,7 @@ super + d
    rofi -show drun
 
 super + s
-   maim ~/Screenshots/$(date +%d_%H:%M).png
+   maim -s | xclip -selection clipboard -t image/png
 
 XF86AudioRaiseVolume
    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+

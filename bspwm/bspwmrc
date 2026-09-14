@@ -9,17 +9,17 @@ bspc config focus_follows_pointer	true
 bspc config focused_border_color	"#FFFFFF"
 bspc config normal_border_color		"#858585"
 
-pkill pipewire
-pkill wireplumber
-pkill pipewire-pulse
+killall pipewire
+killall  wireplumber
+killall pipewire-pulse
 sleep 1
 pipewire &
 wireplumber &
 pipewire-pulse &
 sxhkd &
 picom --backend xrender &
+xwallpaper --stretch ~/.config/bspwm/gentoo.png &
 polybar &
-xwallpaper --stretch ~/.config/bspwm/sdn.png &
 xset -dpms &
 xset s off &
 setxkbmap it &
