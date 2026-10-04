@@ -18,7 +18,7 @@ wireplumber &
 pipewire-pulse &
 sxhkd &
 picom --backend xrender &
-xwallpaper --stretch ~/.config/bspwm/train.png &
+xwallpaper --stretch ~/.config/bspwm/ptwl.jpg &
 polybar &
 xset -dpms &
 xset s off &
